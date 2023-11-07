@@ -8,27 +8,33 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      name: 'Web Developeer',
-      description: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolore, aperiam repellat illum quod repudiandae id a dolorum qui quis.',
-      link: 'lorem fsdfadfd'
+      name: 'User Experience (UX) Design',
+      description: ' Collaborate with UX/UI designers to implement visually appealing and user-friendly interfaces.',
+
     },
     {
       id: 2,
-      name: 'Web Developeer',
-      description: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolore, aperiam repellat illum quod repudiandae id a dolorum qui quis.',
-      link: 'lorem fsdfadfd'
+      name: 'Collaboration',
+      description: ' Work closely with backend developers, designers, and other team members to achieve project goals.',
+ 
     },
     {
       id: 3,
-      name: 'Web Developeer',
-      description: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolore, aperiam repellat illum quod repudiandae id a dolorum qui quis.',
-      link: 'lorem fsdfadfd'
+      name: 'Code Implementation',
+      description: ' Write clean, maintainable, and efficient code for the frontend of our web applications Implement responsive and visually appealing user interfaces based on design specifications.',
+
     },
     {
       id: 4,
-      name: 'UI UX Designer',
-      description: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolore, aperiam repellat illum quod repudiandae id a dolorum qui quis.',
-      link: 'lorem fsdfadfd'
+      name: 'API Integration',
+      description: ' Integrate with backend APIs to fetch and display data dynamically on the frontend.',
+
+    },
+    {
+      id: 5,
+      name: 'Testing',
+      description: ' Implement unit tests and participate in integration testing to ensure the reliability of frontend code.',
+
     }
   ]
 
@@ -41,23 +47,23 @@ const Services = () => {
         <div className="flex flex-col lg:flex-row">
           {/* text */}
           <motion.div
-          variants={fadeIn('right', 0.3)}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.7 }}
-          className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat bg-blend-lighten bg-opacity-100  mb-12 lg:mb-0 ">
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat bg-blend-lighten bg-opacity-100  mb-12 lg:mb-0 ">
             <h1 className='h2 text-accent mb-5'>What I DO</h1>
-            <h3 className='h3 max-w-[450px] mb-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, eaque ipsa recusandae atque optio numquam minima est voluptatum fuga minus?</h3>
+            <h3 className='h3 max-w-[450px] mb-16'>As a frontend web developer, my main focus is designing and implementing the user interface and user experience of a website or web application</h3>
 
             <button className='btn btn-sm'>See my work</button>
           </motion.div>
           {/* services */}
           <motion.div
-           variants={fadeIn('left', 0.3)}
-           initial='hidden'
-           whileInView={'show'}
-           viewport={{ once: false, amount: 0.7 }}
-          className="flex-1">
+            variants={fadeIn('left', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className="flex-1">
             {/* service list */}
             <div className="">
               {services.map((item) => {
@@ -69,10 +75,7 @@ const Services = () => {
                       <p className='font-secondary leading-tight'>{item.description}</p>
                     </div>
                     <div className="flex flex-col flex-1 items-end">
-                      <a href="" className='btn w-9 h-9 mb-[24px] flex justify-center items-center'>
-                        <BsArrowRight/>
-                      </a>
-                      <a href="" className='text-gradient text-sm'>{item.link}</a>
+
                     </div>
                   </div>
                 )

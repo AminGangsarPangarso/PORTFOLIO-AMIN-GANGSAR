@@ -6,6 +6,7 @@ import { FaInstagramSquare } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation';
 import { fadeIn } from '../variants';
 import { motion } from 'framer-motion';
+import ReactWhatsapp from 'react-whatsapp';
 
 const Banner = () => {
   return (
@@ -48,33 +49,37 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 max-w-lg mx-auto lg:mx-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam temporibus blanditiis neque aut non. Numquam pariatur eum architecto voluptates obcaecati? Suscipit nisi temporibus ex pariatur officia voluptatibus quidem ipsam non?</motion.p>
+              className='mb-8 max-w-lg mx-auto lg:mx-0'>
+              "I am a Web Frontend Developer with a proven track record in crafting captivating user experiences. Proficient in key web technologies, including HTML, CSS, and JavaScript, I bring a dynamic skill set to the table. My expertise extends to leveraging popular frameworks such as Bootstrap, ReactBootstrap, Tailwind, and React.js. I excel in translating design concepts into seamless, responsive, and visually appealing interfaces. With a keen eye for detail and a commitment to staying abreast of the latest industry trends, I am dedicated to creating user-centric websites that not only meet but exceed expectations."</motion.p>
             <motion.div
               variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
-              <button className='btn btn-lg mr-2 '>Contact me</button>
-              <a href="#" className='text-gradient btn-link'>
+              <ReactWhatsapp className='btn btn-lg mr-2 cursor-pointer' number="62-81804838974" message="Hello ....">
+                Contact me
+              </ReactWhatsapp>
+
+              <a href="https://github.com/AminGangsarPangarso" className='text-gradient btn-link cursor-pointer'>
                 My Portofilio
               </a>
             </motion.div>
 
 
             <motion.div
-             variants={fadeIn('up',0.3)}
-             initial='hidden'
-             whileInView={'show'}
-             viewport={{once:false, amount:0.7}}
-            className="flex gap-x-6 items-center  py-5 text-[20px] max-w-max mx-auto lg:mx-0">
-              <a href="#">
+              variants={fadeIn('up', 0.3)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }}
+              className="flex gap-x-6 items-center  py-5 text-[20px] max-w-max mx-auto lg:mx-0">
+              <a href="https://www.instagram.com/amin_gangsar/">
                 <FaInstagramSquare />
               </a>
-              <a href="#">
+              <a href="https://github.com/AminGangsarPangarso">
                 <BsGithub />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/amin-gangsar-55b66726b/">
                 <AiFillLinkedin />
               </a>
             </motion.div>
@@ -82,10 +87,10 @@ const Banner = () => {
 
           </div>
           <motion.div
-           variants={fadeIn('down',0.3)}
-           initial='hidden'
-           whileInView={'show'}
-          className=" hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] ">
+            variants={fadeIn('down', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            className=" hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] ">
             <img src={image} alt="" className='w-[500px] h-[500px]' />
           </motion.div>
         </div>

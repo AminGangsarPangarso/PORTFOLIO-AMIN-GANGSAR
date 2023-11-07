@@ -21,6 +21,8 @@ const Contact = () => {
               </motion.div>
               {/* form*/}
               <motion.form 
+              action='https://formspree.io/f/mjvqzpwr'
+              method='post'
               variants={fadeIn ('left', 0.3)}
               initial='hidden'
               whileInView={'show'}
@@ -29,12 +31,12 @@ const Contact = () => {
                 <input 
                 className='bg-transparent border-b py-3 
                 outline-none w-full placeholder:text-white transition-all
-                 focus:border-accent ' type="text" name="" id="" 
+                 focus:border-accent ' type="text" name="email" id="email" 
                  placeholder='Your email'/>
                 <input 
                 className='bg-transparent border-b py-3 
                 outline-none w-full placeholder:text-white transition-all
-                 focus:border-accent resize-none mb-12' type="text" name="" id="" 
+                 focus:border-accent resize-none mb-12' type="text" name="name" id="name" 
                  placeholder='Your name'/>
                 <textarea
                 className='bg-transparent border-b py-12
@@ -42,7 +44,7 @@ const Contact = () => {
                  focus:border-accent'
                  
                  placeholder='Your message'
-                name="" id="" cols="30" rows="10"></textarea>
+                name="message" id="message" cols="30" rows="10"></textarea>
 
                 <button className='btn btn-sm'>Send message</button>
               </motion.form>

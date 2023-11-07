@@ -21,7 +21,7 @@ const Work = () => {
             {/* text */}
             <div className="">
               <h2 className='h2 leading-tight text-accent'>My Latest <br />Work.</h2>
-              <p className='max-w-sm mb-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus doloribus pariatur possimus quis, architecto debitis! Pariatur, facere molestias laudantium animi reiciendis, soluta amet placeat sequi repellendus totam perspiciatis vitae?</p>
+              <p className='max-w-sm mb-16'>As lead developer on this project, I was responsible for designing and implementing an innovative content management system for a publishing industry client. Leverages expertise in creating responsive, engaging, and easy-to-use user interfaces. Collaborating closely with the design team, I transformed visual concepts into functional React components, creating an intuitive and efficient user experience. The success of this project reflects my commitment to quality frontend development and the ability to deliver solutions that meet the unique needs of the client's industry.</p>
               <button className='btn btn-sm'>View all project</button>
             </div>
             {/* image */}
@@ -32,11 +32,11 @@ const Work = () => {
                 <img className='group-hover:scale-125 transition-all duration-500' src={img1}alt="" />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className='text-gradient'>UI/UX Design</span>
+                  <span className='text-gradient'>Education</span>
                   </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className='text-3xl text-white'>Project Title</span>
+                  <span className='text-3xl text-white'>Website course</span>
                 </div>
             </div>
           </motion.div>
@@ -54,11 +54,11 @@ const Work = () => {
                 <img className='group-hover:scale-125 transition-all duration-500' src={img2}alt="" />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className='text-gradient'>UI/UX Design</span>
+                  <span className='text-gradient'>Ecommerce</span>
                   </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className='text-3xl text-white'>Project Title</span>
+                  <span className='text-3xl text-white'>Website UMKM</span>
                 </div>
             </div>
             {/* image */}
@@ -69,11 +69,11 @@ const Work = () => {
                 <img className='group-hover:scale-125 transition-all duration-500' src={img3}alt="" />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className='text-gradient'>UI/UX Design</span>
+                  <span className='text-gradient'>Medical History</span>
                   </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className='text-3xl text-white'>Project Title</span>
+                  <span className='text-3xl text-white'>Website HealthyDoc</span>
                 </div>
             </div>
           </motion.div>
